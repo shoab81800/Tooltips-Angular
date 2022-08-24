@@ -59,7 +59,8 @@
   color: black;
   text-transform: none;
   cursor: pointer;
-  margin: 6px;
+  margin: 1px 7px;
+  font-size: 22px;
 }
 
 .popover > .arrow {
