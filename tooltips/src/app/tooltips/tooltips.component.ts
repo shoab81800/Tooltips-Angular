@@ -14,6 +14,10 @@ export class TooltipsComponent implements OnInit {
   }
 
   openToolTip(){
+    if(this.showToolTip){
+      this.showToolTip=false;
+      return;
+    }
     this.showToolTip = true
   }
 
