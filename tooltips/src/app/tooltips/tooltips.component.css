@@ -48,7 +48,6 @@
 }
 
 .close-popover {
-  background: url("../../assets/close.png") no-repeat;
   position: absolute;
   top: 2px;
   right: 0;
