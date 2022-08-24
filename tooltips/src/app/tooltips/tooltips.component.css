@@ -50,7 +50,7 @@
 .close-popover {
   background: url("../../assets/close.png") no-repeat;
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   width: 16px;
   height: 16px;
