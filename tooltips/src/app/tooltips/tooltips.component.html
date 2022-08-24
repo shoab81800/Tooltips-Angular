@@ -1,49 +1,24 @@
-<div class="tooltip">
-    <svg
-    (click)="openToolTip()"
-                    width="14px"
-                    height="14px"
-                    viewBox="0 0 14 14"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    focusable="false"
-                  >
-                    <g
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g transform="translate(-55.000000, -423.000000)">
-                        <g transform="translate(56.000000, 424.000000)">
-                          <circle
-                            stroke="#444444"
-                            cx="6.2"
-                            cy="6.2"
-                            r="6.2"
-                            class="info-svg-circle"
-                          ></circle>
-                          <text
-                            font-family="CorisandeBold"
-                            font-size="12"
-                            font-weight="bold"
-                            fill="#444444"
-                            class="info-svg-text"
-                          >
-                            <tspan x="4.75" y="10.5">i</tspan>
-                          </text>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <div class="popover" *ngIf="showToolTip">
-                    <div class="arrow"></div>
-                        <div class="popover-content">
-                            <span class="info-popover-content">
-                                {{toolTipMsg}}
-                            </span>
-                            <a href="#" class="close-popover" (click)="closeToolTip($event)">&times;</a>
-                        </div>
-                  </div>
-</div>
+<a class="tooltip" href="javascript:void(0)" (click)="openToolTip()" (blur)="closeToolTip($event)">
+  <svg  width="14px" height="14px" viewBox="0 0 14 14" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-55.000000, -423.000000)">
+        <g transform="translate(56.000000, 424.000000)">
+          <circle stroke="#444444" cx="6.2" cy="6.2" r="6.2" class="info-svg-circle"></circle>
+          <text font-family="CorisandeBold" font-size="12" font-weight="bold" fill="#444444" class="info-svg-text">
+            <tspan x="4.75" y="10.5">i</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <div class="popover" *ngIf="showToolTip">
+    <div class="arrow"></div>
+    <div class="popover-content">
+      <span class="info-popover-content">
+        {{toolTipMsg}}
+      </span>
+      <a href="#" class="close-popover">&times;</a>
+    </div>
+  </div>
+</a>
